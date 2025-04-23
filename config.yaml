@@ -1,0 +1,20 @@
+general:
+  output_dir: results/
+  random_seed: 42
+
+datasets:
+  kitti:
+    root: data/kitti/
+    sequences: [00, 05, 09]
+  tum:
+    root: data/tum/
+    sequences: [fr1_desk, fr2_xyz]
+  euroc:
+    root: data/euroc/
+    sequences: [MH_01_easy, MH_05_difficult]
+
+ekf:
+  imu_rate_hz: 1000
+  sliding_window: 10
+  accel_noise: 0.2   # m/s^2
+  gyro_noise: 0.01   # rad/s
